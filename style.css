@@ -13,9 +13,10 @@ body {
   height: 32px;
   font-size: 32px;
   color: #fff;
-  margin: auto;
-  position: relative;
-  top: 12%;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .container {
   height: 100%;
