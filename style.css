@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.wrap {
+  background-image: no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.date {
+  width: 500px;
+  height: 32px;
+  font-size: 32px;
+  color: #fff;
+  margin: auto;
+  position: relative;
+  top: 12%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.clock {
+  font-size: 100px;
+  color: #fff;
+}
+
+.greet {
+  display: flex;
+  font-size: 40px;
+  color: #fff;
+  align-items: center;
+}
+.greet input {
+  width: 340px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 5px solid #fff;
+  font-size: 40px;
+  background: transparent;
+  color: #fff;
+  margin-left: 20px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.greet input:focus {
+  outline: none;
+}
+.greet input::placeholder {
+  color: #ffffffa8;
+  font-size: 30px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+.fa-solid {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* todoList */
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 280px;
+  width: 500px;
+  overflow: auto;
+}
+.todoContainer::-webkit-scrollbar {
+  display: none;
+}
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.inputContainer input {
+  width: 320px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 5px solid #fff;
+  font-size: 30px;
+  background: transparent;
+  color: #fff;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.inputContainer input::placeholder {
+  color: #ffffffa8;
+  font-size: 30px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+.inputContainer input:focus {
+  outline: none;
+}
+
+.addBtn {
+  width: 160px;
+  height: 44px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.todoItem {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  font-size: 24px;
+  align-items: center;
+  color: #fff;
+}
+
+.deleteBtn {
+  font-family: 'Black Han Sans', sans-serif;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.checked {
+  text-decoration: line-through;
+}
+
+/* 날씨 api */
+#weather {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  text-align: center;
+}
+#weather .temp {
+  color: #fff;
+  font-size: 20px;
+}
